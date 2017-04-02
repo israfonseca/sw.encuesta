@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var mongoClient = requiere('mongodb').mongoClient;
+var mongoClient = require('mongodb').MongoClient;
 var connection = "mongodb://localhost:27017/mongodemo2";
 
 mongoClient.connect(connection,function(err,db){
